@@ -1,0 +1,84 @@
+.cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  width: 100%;
+  gap: 20px;
+  align-items: baseline;
+}
+
+.wrapCard {
+  padding: 1px;
+  border-radius: 8px;
+  background: linear-gradient(to right, Magenta, yellow, Cyan, Magenta) 0% center/200%;
+  animation: gaming 2s linear infinite;
+}
+
+@keyframes gaming {
+  100% {
+    background-position-x: 200%;
+  }
+}
+
+.card {
+  background: linear-gradient(
+      to bottom,
+      transparent,
+      rgb(var(--background-end-rgb))
+    )
+    rgb(var(--background-start-rgb));
+  border-radius: 8px;
+  padding: 30px 20px;
+}
+
+.wrapImg {
+  padding-bottom: 10px;
+  display: grid;
+  place-content: center;
+  margin-bottom: 10px;
+  position: relative;
+}
+
+.league {
+  margin-bottom: 5px;
+  font-style: italic;
+}
+
+.team {
+  font-size: 20px;
+  margin-bottom: 15px;
+  font-weight: 600;
+}
+
+.category {
+  margin-bottom: 5px;
+  font-style: italic;
+}
+
+.playerName {
+  font-size: 28px;
+  margin-bottom: 20px;
+  font-family: 'Zen Kurenaido', sans-serif;
+}
+
+.wrapStats {
+  display: grid;
+  row-gap: 30px;
+}
+
+.statsCate {
+  margin-bottom: 15px;
+  padding-bottom: 6px;
+  position: relative;
+  display: inline-block;
+}
+
+.statsCate::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 105%;
+  height: 1px;
+  background: linear-gradient(to right, Magenta, yellow, Cyan, Magenta) 0% center/200%;
+  animation: gaming 2s linear infinite;
+}

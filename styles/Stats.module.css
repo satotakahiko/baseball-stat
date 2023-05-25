@@ -1,0 +1,23 @@
+.stats {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 10px;
+  padding: 0 8px;
+}
+
+.stat {
+  font-family: 'IBM Plex Sans JP', sans-serif;
+}
+
+.statTitle {
+  
+}
+
+.statValue {
+  padding-left: 5px;
+}
+
+.note {
+  font-size: 20px;
+  padding: 10px 0;
+}
