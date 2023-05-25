@@ -1,18 +1,6 @@
-# 環境
-- Next.js
-- TypeScript
-- tailwindcss 
-- Firebase
-- microCMS
+# MLB stats
 
-# Firebaseの設定
-1. **lib\FirebaseConfig.js** を作成
-1. **.env** を作成
-1. `npm install --save-dev firebase-tools`（ツールのインストール）
-1. `firebase login`
-1. `firebase init`
-1. `npm run build`
-1. `firebase deploy`
+https://baseball-stat-c73b9.web.app/
 
 # MLB stats 日本語訳
 ## 投手
